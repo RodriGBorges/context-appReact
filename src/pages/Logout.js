@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { UserContext } from '../UserContext';
 
 export const Logout = () => {
-    return (
 
+    const {user, setUser} = useContext(UserContext);
+
+    const handleClick = () => setUser({})
+
+    return (
         <>
-    
             <h1>Logout</h1>
             <hr/>
-
-            <button className='btn btn-secondary'>
+            <pre>
+                {JSON.stringify(user, null, 3)}
+            </pre>
+            <button className='btn btn-secondary' onClick={handleClick}>
                 Logout
             </button>
-        
         </>
-    
-        );
+    );
 };
