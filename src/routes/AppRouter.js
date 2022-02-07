@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Navbar } from '../components/Navbar';
 import { Home } from '../pages/Home';
 import { Login } from '../pages/Login';
 import { Logout } from '../pages/Logout';
@@ -8,6 +9,7 @@ import { Logout } from '../pages/Logout';
 export const AppRouter = () => {
     return (
         <BrowserRouter>
+        <Navbar/>
             <div className='container mt-3'>
                 <Routes>
                     <Route path='/' element={<Home/>}/>

@@ -8,7 +8,7 @@ export const Logout = () => {
             <h1>Logout</h1>
             <hr/>
 
-            <button>
+            <button className='btn btn-secondary'>
                 Logout
             </button>
         
