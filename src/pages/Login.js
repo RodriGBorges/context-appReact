@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { UserContext } from '../UserContext';
 
 export const Login = () => {
-    return (
 
+    const {setUser} = useContext(UserContext);
+
+    const handleClick = () => setUser({
+        id: 123,
+        name: 'Rodrigo',
+        email: 'prueba@gmail.com'
+    })
+
+    return (
         <>
-    
             <h1>Login</h1>
             <hr/>
 
-            <button className='btn btn-primary'>
+            <button className='btn btn-primary' onClick={handleClick}>
                 Login
             </button>
-        
         </>
-    
-        );
+    );
 };
