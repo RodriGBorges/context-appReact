@@ -12,7 +12,7 @@ export const AppRouter = () => {
                 <Routes>
                     <Route path='/' element={<Home/>}/>
                     <Route path='/login' element={<Login/>}/>
-                    <Route path='/login' element={<Logout/>}/>
+                    <Route path='/logout' element={<Logout/>}/>
                     <Route path='*' element={
                         <main className='p-4'>
                             <h1>Error 404</h1>
