@@ -1,5 +1,18 @@
 import React from 'react';
 
 export const Logout = () => {
-  return <div></div>;
+    return (
+
+        <>
+    
+            <h1>Logout</h1>
+            <hr/>
+
+            <button>
+                Logout
+            </button>
+        
+        </>
+    
+        );
 };
